@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("diplom_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+866fcb4337c818364f702a4727267bdd8668a86b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+605094788c273d53a7d0ad4fef60de74a03f84b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("diplom_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("diplom_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
