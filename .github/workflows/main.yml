@@ -25,4 +25,6 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Check code style
       run: |
+        dotnet tool install --tool-manifest dotnet-tools.json dotnet-format --version 5.1.250801
+        dotnet tool restore
         dotnet-format --check --verbosity diagnostic --no-restore --verify-no-changes
