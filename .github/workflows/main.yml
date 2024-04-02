@@ -25,9 +25,13 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
 
+    - name: Install tools
+      run: |
+        dotnet tool restore
+        dotnet tool install --global dotnet-format --version 5.0.400
+        dotnet tool install --global StyleCop.Analyzers --version 1.2.0
+
     - name: Run syntax check
       run: |
         dotnet build --no-restore --configuration Release --verbosity quiet
-        dotnet tool install --global StyleCop.Analyzers --version 1.2.0
-        dotnet tool install --global dotnet-format --version 5.0.400
         dotnet format --check --verbosity diagnostic
