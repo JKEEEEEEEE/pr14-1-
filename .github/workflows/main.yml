@@ -17,7 +17,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1.0.2 # Подключаем MSBuild
 
       - name: Build solution
-        run: msbuild /t:Build /p:Configuration=Release YourSolution.sln # Замените YourSolution.sln на ваш файл решения
+        run: msbuild /t:Build /p:Configuration=Release diplom_api.sln # Замените YourSolution.sln на ваш файл решения
 
       - name: Install .NET Core
         uses: actions/setup-dotnet@v1
