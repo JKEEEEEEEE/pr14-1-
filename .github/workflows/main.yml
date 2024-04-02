@@ -1,28 +1,31 @@
-﻿name: CSharp_Syntax_Check
+﻿name: CSharp_pipeline
 
 on:
   push:
     branches:
-      - main
-      - development
+      - master
 
 jobs:
-  syntax_check:
-    runs-on: ubuntu-latest
+  check_syntax:
+    runs-on: windows-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Setup .NET Core
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Build solution
+        run: msbuild /t:Build /p:Configuration=Release /p:Platform="Any CPU" "%CI_PROJECT_DIR%\diplom_api\diplom_api.sln"
+
+      - name: Install .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: 6.0.x
 
       - name: Install Roslyn Analyzers
         run: dotnet tool install -g Microsoft.CodeAnalysis.NetAnalyzers
 
-      - name: Build and Analyze
-        run: |
-          dotnet build MySolution.sln
-          dotnet analyze MySolution.sln
+      - name: Run Roslyn Analyzers
+        run: dotnet analyze --severity error
