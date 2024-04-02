@@ -3,29 +3,26 @@
 on:
   push:
     branches:
-      - master # замените на вашу основную ветку
+      - news
 
 jobs:
-  check_syntax:
-    runs-on: windows-latest # Здесь используется Windows, потому что вы используете Visual Studio
+  checkstyle_project:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.0.2 # Подключаем MSBuild
-
-      - name: Build solution
-        run: msbuild /t:Build /p:Configuration=Release diplom_api.sln # Замените YourSolution.sln на ваш файл решения
-
-      - name: Install .NET Core
+      - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 6.0.x # Установите нужную версию .NET Core
+          dotnet-version: '6.0.x'
 
-      - name: Install Roslyn Analyzers
-        run: dotnet tool install -g Microsoft.CodeAnalysis.NetAnalyzers
+      - name: Restore dependencies
+        run: dotnet restore
 
-      - name: Run Roslyn Analyzers
-        run: dotnet analyze --severity error # Используйте здесь любые параметры, необходимые для запуска анализаторов кода
+      - name: Build project
+        run: dotnet build
+
+      - name: Run style analyzer
+        run: dotnet format --check
