@@ -2,14 +2,12 @@
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
-
+    branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -23,4 +21,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Check code style with StyleCop
-      run: dotnet build /p:TreatWarningsAsErrors=false /p:WarningsAsErrors=true /p:StyleCopEnabled=false
+      run: dotnet build /p:WarningsAsErrors=true /p:StyleCopEnabled=false
