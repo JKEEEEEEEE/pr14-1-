@@ -1,0 +1,163 @@
+2024-03-16 15:33:24.0862|INFO|Program|My API Start!
+2024-03-16 15:33:28.7368|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-03-16 15:33:28.9360|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-03-16 15:33:29.2025|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\79153\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-16 15:33:29.2025|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\79153\AppData\Local\ASP.NET\DataProtection-Keys\key-3857e86e-54f2-4a29-bcbf-d484b0be6eba.xml'.
+2024-03-16 15:33:29.2410|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\79153\AppData\Local\ASP.NET\DataProtection-Keys\key-3d49d89c-d002-4ebb-9fe9-333172a3952a.xml'.
+2024-03-16 15:33:29.2643|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\79153\AppData\Local\ASP.NET\DataProtection-Keys\key-9316ce85-c3a8-406a-917b-ed2d069d68c0.xml'.
+2024-03-16 15:33:29.2905|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\79153\AppData\Local\ASP.NET\DataProtection-Keys\key-a4423a3a-0c03-4d31-8545-e0a14d5af1f2.xml'.
+2024-03-16 15:33:29.3177|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\79153\AppData\Local\ASP.NET\DataProtection-Keys\key-f3070898-ef94-43db-8d8b-01141c89b32e.xml'.
+2024-03-16 15:33:29.3566|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {3857e86e-54f2-4a29-bcbf-d484b0be6eba}.
+2024-03-16 15:33:29.3566|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {3d49d89c-d002-4ebb-9fe9-333172a3952a}.
+2024-03-16 15:33:29.3566|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {9316ce85-c3a8-406a-917b-ed2d069d68c0}.
+2024-03-16 15:33:29.3566|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {a4423a3a-0c03-4d31-8545-e0a14d5af1f2}.
+2024-03-16 15:33:29.3566|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {f3070898-ef94-43db-8d8b-01141c89b32e}.
+2024-03-16 15:33:29.3880|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {9316ce85-c3a8-406a-917b-ed2d069d68c0} with expiration date 2024-05-06 09:52:02Z as default key.
+2024-03-16 15:33:29.3880|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-16 15:33:29.3880|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2024-03-16 15:33:29.3880|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-03-16 15:33:29.4049|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2024-03-16 15:33:29.4049|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2024-03-16 15:33:29.4049|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {9316ce85-c3a8-406a-917b-ed2d069d68c0} as the default key.
+2024-03-16 15:33:29.4049|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {9316ce85-c3a8-406a-917b-ed2d069d68c0} was loaded during application startup.
+2024-03-16 15:33:30.6865|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: B9163728FF2939E053552FA827483C79DCDAD1B8)
+2024-03-16 15:33:30.7597|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7056
+2024-03-16 15:33:30.7740|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5254
+2024-03-16 15:33:30.7740|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly diplom_api
+2024-03-16 15:33:30.7766|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-03-16 15:33:30.7766|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-16 15:33:30.8779|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-03-16 15:33:30.8876|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-03-16 15:33:30.8876|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\vs proekts\diplom_api\diplom_api\
+2024-03-16 15:33:30.9076|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-03-16 15:33:31.2019|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6M7" accepted.
+2024-03-16 15:33:31.2019|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6M7" started.
+2024-03-16 15:33:31.2358|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6M8" accepted.
+2024-03-16 15:33:31.2358|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6M8" started.
+2024-03-16 15:33:32.4535|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6M9" accepted.
+2024-03-16 15:33:32.4535|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6M9" started.
+2024-03-16 15:33:33.7437|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN25ML4VA6M9 established using the following protocol: Tls13
+2024-03-16 15:33:35.7626|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE.
+2024-03-16 15:33:35.7958|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-03-16 15:33:35.7958|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-03-16 15:33:35.8082|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-03-16 15:33:35.8082|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-03-16 15:33:35.8082|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" received HEADERS frame for stream ID 1 with length 522 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-03-16 15:33:36.1355|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-03-16 15:33:36.3863|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7056/swagger/index.html - -
+2024-03-16 15:33:38.5277|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-03-16 15:33:38.5277|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-03-16 15:33:38.6221|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-03-16 15:33:38.6221|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-03-16 15:33:38.9872|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection.
+2024-03-16 15:33:38.9872|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS.
+2024-03-16 15:33:39.0343|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 1 with length 4096 and flags NONE.
+2024-03-16 15:33:39.0343|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 1 with length 633 and flags NONE.
+2024-03-16 15:33:39.0343|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 1 with length 357 and flags NONE.
+2024-03-16 15:33:39.0343|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 1 with length 16 and flags NONE.
+2024-03-16 15:33:39.0343|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection.
+2024-03-16 15:33:39.0529|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-03-16 15:33:39.0604|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7056/swagger/index.html - - - 200 - text/html;charset=utf-8 2718.1488ms
+2024-03-16 15:33:39.0995|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-03-16 15:33:39.0995|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" received WINDOW_UPDATE frame for stream ID 1 with length 4 and flags 0x0.
+2024-03-16 15:33:39.2901|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" received HEADERS frame for stream ID 3 with length 116 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-03-16 15:33:39.3131|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7056/_vs/browserLink - -
+2024-03-16 15:33:39.6678|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending HEADERS frame for stream ID 3 with length 149 and flags END_HEADERS.
+2024-03-16 15:33:39.6678|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 9986 and flags NONE.
+2024-03-16 15:33:39.6690|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.6690|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.6690|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.6690|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.6690|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.6690|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 10240 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 160 and flags NONE.
+2024-03-16 15:33:39.8099|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM.
+2024-03-16 15:33:39.8099|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7056/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 504.9948ms
+2024-03-16 15:33:39.9321|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" received HEADERS frame for stream ID 5 with length 67 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-03-16 15:33:39.9392|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - -
+2024-03-16 15:33:39.9392|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-03-16 15:33:39.9392|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2024-03-16 15:33:39.9392|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-03-16 15:33:40.4562|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending HEADERS frame for stream ID 5 with length 65 and flags END_HEADERS.
+2024-03-16 15:33:40.4562|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 5 with length 16384 and flags NONE.
+2024-03-16 15:33:40.4562|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 5 with length 16384 and flags NONE.
+2024-03-16 15:33:40.4562|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 5 with length 15872 and flags NONE.
+2024-03-16 15:33:40.4562|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM.
+2024-03-16 15:33:40.4562|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7056/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 518.2287ms
+2024-03-16 15:33:41.3543|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN25ML4VA6M9" received FIN.
+2024-03-16 15:33:41.7247|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6M9" is closed. The last processed stream ID was 5.
+2024-03-16 15:33:41.7247|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN25ML4VA6M9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-16 15:33:41.7745|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out.
+2024-03-16 15:33:41.8687|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out.
+2024-03-16 15:33:41.8849|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6M9" stopped.
+2024-03-16 15:33:41.8849|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6M7" stopped.
+2024-03-16 15:33:41.8849|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6M8" stopped.
+2024-03-16 15:33:41.8849|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN25ML4VA6M7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-16 15:33:41.8868|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN25ML4VA6M8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-16 15:34:06.8838|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6MA" accepted.
+2024-03-16 15:34:06.8838|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6MA" started.
+2024-03-16 15:34:06.9409|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN25ML4VA6MA established using the following protocol: Tls13
+2024-03-16 15:34:06.9409|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE.
+2024-03-16 15:34:06.9409|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-03-16 15:34:06.9409|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-03-16 15:34:06.9409|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-03-16 15:34:06.9409|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-03-16 15:34:06.9409|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" received HEADERS frame for stream ID 1 with length 420 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-03-16 15:34:06.9409|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7056/WeatherForecast - -
+2024-03-16 15:34:06.9788|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-03-16 15:34:06.9788|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-03-16 15:34:06.9930|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast'
+2024-03-16 15:34:07.0009|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'diplom_api.Controllers.WeatherForecastController.Get (diplom_api)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast'
+2024-03-16 15:34:07.0009|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'diplom_api.Controllers.WeatherForecastController.Get (diplom_api)'
+2024-03-16 15:34:07.0009|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-03-16 15:34:07.0009|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'diplom_api.Controllers.WeatherForecastController.Get (diplom_api)'
+2024-03-16 15:34:07.0430|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[diplom_api.WeatherForecast] Get() on controller diplom_api.Controllers.WeatherForecastController (diplom_api).
+2024-03-16 15:34:07.0430|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-03-16 15:34:07.0430|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-03-16 15:34:07.0430|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-03-16 15:34:07.0430|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-03-16 15:34:07.0430|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-03-16 15:34:07.0430|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller diplom_api.Controllers.WeatherForecastController (diplom_api)
+2024-03-16 15:34:07.0430|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller diplom_api.Controllers.WeatherForecastController (diplom_api)
+2024-03-16 15:34:07.0430|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-03-16 15:34:07.0430|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-03-16 15:34:07.0430|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-03-16 15:34:07.0430|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-03-16 15:34:07.0647|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method diplom_api.Controllers.WeatherForecastController.Get (diplom_api) - Validation state: Valid
+2024-03-16 15:34:07.0647|FATAL|diplom_api.Controllers.WeatherForecastController|Critical!!!
+2024-03-16 15:34:07.0973|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method diplom_api.Controllers.WeatherForecastController.Get (diplom_api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 16.9823ms.
+2024-03-16 15:34:07.0973|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-03-16 15:34:07.0973|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-03-16 15:34:07.0973|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-03-16 15:34:07.0973|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-03-16 15:34:07.0973|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-03-16 15:34:07.0973|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-03-16 15:34:07.0973|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2024-03-16 15:34:07.1080|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-03-16 15:34:07.1080|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain'.
+2024-03-16 15:34:07.1205|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2024-03-16 15:34:07.1205|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-03-16 15:34:07.1205|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-03-16 15:34:07.1205|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-03-16 15:34:07.1205|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'diplom_api.WeatherForecast[]'.
+2024-03-16 15:34:07.1433|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" sending HEADERS frame for stream ID 1 with length 74 and flags END_HEADERS.
+2024-03-16 15:34:07.1433|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" sending DATA frame for stream ID 1 with length 501 and flags NONE.
+2024-03-16 15:34:07.1433|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2024-03-16 15:34:07.1433|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-03-16 15:34:07.1433|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-03-16 15:34:07.1561|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action diplom_api.Controllers.WeatherForecastController.Get (diplom_api) in 98.8944ms
+2024-03-16 15:34:07.1561|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'diplom_api.Controllers.WeatherForecastController.Get (diplom_api)'
+2024-03-16 15:34:07.1561|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-03-16 15:34:07.1561|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7056/WeatherForecast - - - 200 - application/json;+charset=utf-8 211.0736ms
+2024-03-16 15:34:11.3632|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN25ML4VA6MA" received FIN.
+2024-03-16 15:34:11.3632|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN25ML4VA6MA" is closed. The last processed stream ID was 1.
+2024-03-16 15:34:11.3632|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN25ML4VA6MA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-16 15:34:11.3632|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN25ML4VA6MA" stopped.
