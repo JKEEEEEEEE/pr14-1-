@@ -2,12 +2,14 @@
 
 on:
   push:
-    branches: [ "testing" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "testing" ]
+    branches: [ "master" ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
