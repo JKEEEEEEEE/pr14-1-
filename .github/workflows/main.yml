@@ -1,33 +1,26 @@
-﻿name: CSharp_pipeline
+﻿name: CI
 
 on:
   push:
-    branches:
-      - master
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
 jobs:
-  check_syntax:
-    runs-on: windows-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.0.2
-
-      - name: Build solution
-        run: |
-          cd diplom_api
-          msbuild /t:Build /p:Configuration=Release /p:Platform="Any CPU" diplom_api.sln
-
-      - name: Install .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 6.0.x
-
-      - name: Install Roslyn Analyzers
-        run: dotnet tool install -g Microsoft.CodeAnalysis.NetAnalyzers
-
-      - name: Run Roslyn Analyzers
-        run: dotnet analyze --severity error
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+    - name: Check code style with StyleCop
+      run: dotnet build /p:TreatWarningsAsErrors=true /p:StyleCopEnabled=true
