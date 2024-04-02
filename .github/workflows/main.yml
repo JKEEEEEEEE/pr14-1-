@@ -3,26 +3,29 @@
 on:
   push:
     branches:
-      - news
+      - master
 
 jobs:
-  checkstyle_project:
-    runs-on: ubuntu-latest
+  check_syntax:
+    runs-on: windows-latest
 
     steps:
-      - name: Git clone repo
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up .NET Core
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Build solution
+        run: msbuild /t:Build /p:Configuration=Release /p:Platform="Any CPU" ./diplom_api.sln
+
+      - name: Install .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: 6.0.x
 
-      - name: Install dependencies with NuGet
-        run: |
-          dotnet restore
-          
-      - name: Check style project
-        run: |
-          dotnet tool install --global dotnet-format
-          dotnet format --check
+      - name: Install Roslyn Analyzers
+        run: dotnet tool install -g Microsoft.CodeAnalysis.NetAnalyzers
+
+      - name: Run Roslyn Analyzers
+        run: dotnet analyze --severity error
