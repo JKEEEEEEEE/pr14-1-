@@ -3,29 +3,26 @@
 on:
   push:
     branches:
-      - master
+      - news
 
 jobs:
-  check_syntax:
-    runs-on: windows-latest
+  checkstyle_project:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Git clone repo
         uses: actions/checkout@v2
 
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.0.2
-
-      - name: Build solution
-        run: msbuild /t:Build /p:Configuration=Release /p:Platform="Any CPU" "D:\vs proekts\diplom_api\diplom_api.sln"
-
-      - name: Install .NET Core
+      - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 6.0.x
+          dotnet-version: '6.0.x'
 
-      - name: Install Roslyn Analyzers
-        run: dotnet tool install -g Microsoft.CodeAnalysis.NetAnalyzers
-
-      - name: Run Roslyn Analyzers
-        run: dotnet analyze --severity error
+      - name: Install dependencies with NuGet
+        run: |
+          dotnet restore
+          
+      - name: Check style project
+        run: |
+          dotnet tool install --global dotnet-format
+          dotnet format --check
