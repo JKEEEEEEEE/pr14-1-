@@ -28,4 +28,3 @@
             dotnet tool install --tool-manifest D:\vs proekts\diplom_api\diplom_api\dotnet-tools.json dotnet-format --version 5.1.250801
             dotnet tool restore
             dotnet-format --check --verbosity diagnostic --no-restore --verify-no-changes
-
