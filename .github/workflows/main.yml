@@ -17,7 +17,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1.0.2
 
       - name: Build solution
-        run: msbuild /t:Build /p:Configuration=Release /p:Platform="Any CPU" "%CI_PROJECT_DIR%\diplom_api\diplom_api.sln"
+        run: msbuild /t:Build /p:Configuration=Release /p:Platform="Any CPU" "./diplom_api/diplom_api.sln"
 
       - name: Install .NET Core
         uses: actions/setup-dotnet@v1
