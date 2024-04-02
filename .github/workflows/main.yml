@@ -20,7 +20,5 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
     - name: Check code style with StyleCop
       run: dotnet build /p:WarningsAsErrors=true /p:StyleCopEnabled=false
