@@ -23,4 +23,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Check code style with StyleCop
-      run: dotnet build /p:TreatWarningsAsErrors=false /p:StyleCopEnabled=true
+      run: dotnet build /p:TreatWarningsAsErrors=true /p:StyleCopEnabled=true
